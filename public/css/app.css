@@ -10471,9 +10471,15 @@ a.text-dark:focus {
   }
 }
 
-.navbar-laravel {
-  background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+body,
+html,
+#react-root {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#0f0c29), color-stop(#302b63), to(#24243e));
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
