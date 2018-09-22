@@ -1,18 +1,16 @@
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Variables
-@import 'variables';
-
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootswatch/dist/cosmo/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/cosmo/bootswatch";
 
+// just to make sure React hook doesn't break layout
 body, html, #react-root {
     height: 100%;
     min-height: 100%;
 }
 
+// gradient design https://uigradients.com/#VisionsofGrandeur
 body {
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(to right, #000046, #1cb5e0);
 }
