@@ -92,7 +92,9 @@ class CreateWeaponsTable extends Migration
 
             $table->integer('weapon_type_id')->unsigned();
             $table->foreign('weapon_type_id')->references('id')->on('weapon_types');
-                
+
+            $table->integer('hands_required')->unsigned()->default(1);
+
             $table->integer('weapon_category_id')->unsigned();
             $table->foreign('weapon_category_id')->references('id')->on('weapon_categories');
 

@@ -11,4 +11,8 @@
 |
 */
 
+Route::apiResource('damage_types', 'DamageTypeController');
+Route::apiResource('dice_types', 'DiceTypeController');
 Route::apiResource('weapons', 'WeaponController');
+Route::apiResource('weapon_types', 'WeaponTypeController');
+Route::apiResource('weapon_categories', 'WeaponCategoryController');

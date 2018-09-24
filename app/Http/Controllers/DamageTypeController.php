@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Weapon;
+use App\Models\DamageType;
 use Illuminate\Http\Request;
 
-class WeaponController extends Controller
+class DamageTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class WeaponController extends Controller
      */
     public function index()
     {
-        return Weapon::all();
+        return DamageType::all();
     }
 
     /**

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Weapon;
+use App\Models\DiceType;
 use Illuminate\Http\Request;
 
-class WeaponController extends Controller
+class DiceTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class WeaponController extends Controller
      */
     public function index()
     {
-        return Weapon::all();
+        return DiceType::all();
     }
 
     /**
