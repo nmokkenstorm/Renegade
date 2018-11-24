@@ -1,6 +1,6 @@
 export const loadData = entity =>
     dispatch =>
-        fetch('http://renegade.test/api/' + entity)
+        fetch(window.location + 'api/' + entity)
             .then(data => data.json())
             .then(data => dispatch(receiveData(entity, data)))
 
