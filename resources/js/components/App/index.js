@@ -1,4 +1,13 @@
 import React from 'react';
-import Container from './Container'
+import Presenter from './Presenter';
+import {connectWithLifecycle} from 'react-lifecycle-component'
 
-export default props => <Container {...props} /> 
+const mapDispatchToProps = dispatch => ({
+
+})
+
+const mapStateToProps = state => ({
+
+})
+
+export default connectWithLifecycle(mapStateToProps, mapDispatchToProps)(Presenter)
