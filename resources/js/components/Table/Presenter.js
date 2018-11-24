@@ -2,6 +2,8 @@ import React from 'react';
 
 export default props =>
     <table className="table table-hover">
+    
+    {console.log(props)}
         <thead>
             <tr>
                 <th scope="col">

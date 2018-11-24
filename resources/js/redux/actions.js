@@ -10,6 +10,7 @@ export const receiveData = (entity, data) =>
     ({
         type : RECEIVE_DATA,
         payload : {
+            entity,
             data
         }
     })

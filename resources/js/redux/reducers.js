@@ -1,11 +1,13 @@
 import { RECEIVE_DATA } from './actions'
+import { Map } from 'immutable'
 
-export default (state = { data : []}, action) => {
-    if (action.type == RECEIVE_DATA) {
-        return Object.assign({}, state, {
-            data: action.payload.data
-        }) 
+const DefaultState = Map({
+    'entities' : {
+        'weapon_types' : []  
     }
+});
 
-    return state
-}
+export default (state = DefaultState, action) =>
+    (action.type == RECEIVE_DATA) ?
+        state.setIn(['entities', action.payload.entity], action.payload.data) :
+        state

@@ -11,9 +11,7 @@ export default props =>
                     </div>
 
                     <div className="card-body">
-                        <table className="table table-hover">
-                            <Table entity="weapon_types"/>
-                        </table>
+                        <Table entity="weapon_types"/>
                     </div>
                 </div>
             </div>
