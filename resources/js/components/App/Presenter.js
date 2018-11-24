@@ -3,7 +3,7 @@ import React from 'react';
 export default props =>
     <div className="container">
         <div className="row justify-content-center mt-5">
-            <div className="col-12 col-md-6 col-lg-6">
+            <div className="col-12">
                 <div className="card">
                     <div className="card-header">
                         Weapon Types 
